@@ -1,12 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energia Hidrica</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Energia Hidrica</h1>
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Long scroll com ícones inline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <div id="menu-container">
+        <a id="logo" href="#homeSection"
+          ><img src="images/logo3.png" alt="logo"
+        /></a>
+
+        <div id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul id="nav-list">
+          <li>
+            <a href="#aboutSection" class="nav-item">
+              <div class="icon-container">
+                <img
+                  src="images/images_menu/nav_about.png"
+                  class="icon-default"
+                  alt="About"
+                />
+                <img
+                  src="images/images_menu/nav_about_hover.png"
+                  class="icon-hover"
+                  alt="About Hover"
+                />
+                <img
+                  src="images/images_menu/nav_clicking.png"
+                  class="icon-active"
+                  alt="About Active"
+                />
+              </div>
+              <span class="textoTooltip">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicesSection" class="nav-item">
+              <div class="icon-container">
+                <img
+                  src="images/images_menu/nav_services.png"
+                  class="icon-default"
+                  alt="Services"
+                />
+                <img
+                  src="images/images_menu/nav_services_hover.png"
+                  class="icon-hover"
+                  alt="Services Hover"
+                />
+                <img
+                  src="images/images_menu/nav_clicking.png"
+                  class="icon-active"
+                  alt="Services Active"
+                />
+              </div>
+              <span class="textoTooltip">Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#forumSection" class="nav-item">
+              <div class="icon-container">
+                <img
+                  src="images/images_menu/nav_forum.png"
+                  class="icon-default"
+                  alt="Forum"
+                />
+                <img
+                  src="images/images_menu/nav_forum_hover.png"
+                  class="icon-hover"
+                  alt="Forum Hover"
+                />
+                <img
+                  src="images/images_menu/nav_clicking.png"
+                  class="icon-active"
+                  alt="Forum Active"
+                />
+              </div>
+              <span class="textoTooltip">Forum</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contactsSection" class="nav-item">
+              <div class="icon-container">
+                <img
+                  src="images/images_menu/nav_contacts.png"
+                  class="icon-default"
+                  alt="Contacts"
+                />
+                <img
+                  src="images/images_menu/nav_contacts_hover.png"
+                  class="icon-hover"
+                  alt="Contacts Hover"
+                />
+                <img
+                  src="images/images_menu/nav_clicking.png"
+                  class="icon-active"
+                  alt="Contacts Active"
+                />
+              </div>
+              <span class="textoTooltip">Contacts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="homeSection" class="sec secOne"></section>
+      <section id="aboutSection" class="subsec"></section>
+      <section id="servicesSection" class="sec secTwo"></section>
+      <section id="forumSection" class="subsec"></section>
+      <section id="contactsSection" class="sec secThree"></section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; ECGM. Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script src="js/script_sec_activa_e_mobile.js"></script>
+  </body>
 </html>

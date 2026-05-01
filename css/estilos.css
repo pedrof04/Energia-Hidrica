@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*variáveis a usar*/
+:root {
+  --menu-bg: rgba(0, 0, 0, 0.8);
+  --primary-color: #486c8c;
+  --accent-color: #d6712d;
+  --text-color: #ffffff;
+  --text-light: #ffffff;
+  --transition-speed: 0.3s;
+  --transition: all 0.3s ease;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+#menu-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#menu-container ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+#logo img {
+  width: 60px;
+  height: auto;
+  max-height: 60px;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+#logo:hover img {
+  filter: brightness(1.3);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+.icon-container {
+  position: relative;
+  width: 110px;
+  height: 32px;
+  display: block;
+}
+.icon-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* para que a troca de ícones não seja brusca*/
+}
+
+/*estado normal*/
+.icon-container .icon-default {
+  opacity: 1;
+}
+/* estado active*/
+.nav-item.active .icon-container .icon-default {
+  opacity: 0;
+}
+.nav-item.active .icon-container .icon-active {
+  opacity: 1;
+}
+
+/*estado HOVER*/
+.nav-item:hover .icon-container .icon-default,
+.nav-item:hover .icon-container .icon-active {
+  opacity: 0;
+}
+.nav-item:hover .icon-container .icon-hover {
+  opacity: 1;
+}
+
+/*Tooltip*/
+
+.textoTooltip {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px); /*quando está invisivel está mais acima*/
+
+  background-color: rgba(20, 20, 20, 0.8);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+
+  opacity: 0;
+
+  transition: all 0.3s cubic-bezier(0.4, 0.2, 1);
+}
+
+.nav-item:hover .textoTooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* --- Estilos para o menu Hamburguer --- */
+#hamburger {
+  display: none; /* Escondido por default (desktop) */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 1100;
+  /* Definir uma largura fixa para o container do hambúrguer */
+  width: 30px;
+}
+
+#hamburger span {
+  display: block;
+  /*width: 30px;*/
+  width: 100%; /* Ocupa os 30px */
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+  /* para a animação do X ser fluida */
+  transition: all 0.3s ease-in-out;
+  /* Define a origem da rotação na esquerda */
+  transform-origin: left center;
+}
+
+main {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+}
+.sec,
+.subsec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.sec {
+  min-height: 100vh;
+  background-color: #2c2c2c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+}
+
+.subsec {
+  min-height: 50vh;
+  padding: 40px 20px;
+  background-color: bisque;
+}
+
+.secOne {
+  background-image: url("../images/image1.jpg");
+}
+.secTwo {
+  background-image: url("../images/image2.jpg");
+}
+.secThree {
+  background-image: url("../images/image3.jpg");
+}
+
+footer {
+  background-color: #111;
+  color: #888;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.conteudo {
+  max-width: 1170px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+/* --- MEDIA QUERY (Mobile) --- */
+@media (max-width: 768px) {
+  #hamburger {
+    display: flex; /* Mostra o menu hambúrguer */
+  }
+
+  #menu-container ul {
+    position: absolute;
+    left: -100%; /* Escondido fora do écran à esquerda */
+    top: 60px;
+
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 250px; /* Largura do painel lateral */
+    height: calc(100vh - 60px);
+
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Alinha ícones à esquerda */
+    gap: 30px;
+
+    padding-top: 60px; /* Dá espaço para o logo e hambúrguer */
+    padding-left: 10px; /* Um pouco de espaço da borda esquerda */
+  }
+
+  /* Quando o menu está aberto */
+  #menu-container ul.active {
+    left: 0; /*mostra o painel lateral*/
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: row; /* Alinha ícone e texto na horizontal */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Espaço entre o ícone e o texto */
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Ajuste da Tooltip para se tornar legenda lateral */
+
+  .textoTooltip {
+    /* Reset das propriedades de posicionamento desktop */
+    position: static; /* Remove a flutuação absoluta */
+    transform: none;
+    opacity: 1; /* Torna visível permanentemente no mobile */
+    visibility: visible;
+
+    /* Estilização para parecer um menu lateral */
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    color: #ffffff;
+    white-space: nowrap;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; /* Mais espaço entre as letras */
+  }
+
+  .nav-item:hover .textoTooltip {
+    transform: none;
+  }
+
+  /* Ajuste para o ícone não ocupar o écran todo */
+  .icon-container {
+    position: relative; /* Mantém a referência para as imagens absolute */
+    width: 80px; /* Largura menor para o ícone no mobile */
+    height: 24px; /* fixar a altura*/
+    flex-shrink: 0; /* Impede que o flexbox ignore a largura do ícone */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-container img {
+    width: 100%; /*Ocupa a largura total do contentor (80px) */
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(
+      -50%
+    ); /* Garante que a imagem está no centro vertical do container */
+  }
+  /* Quando o JavaScript adiciona a classe .open ao clicar no menu hambúrguer, gera a animação do X */
+  #hamburger span.open:nth-child(1) {
+    width: 118%;
+    transform: rotate(45deg);
+  }
+  #hamburger span.open:nth-child(2) {
+    opacity: 0;
+    transform: translateX(
+      -10px
+    ); /* A barra do meio desaparece, e dá um efeito de deslize */
+  }
+  #hamburger span.open:nth-child(3) {
+    width: 118%;
+    transform: rotate(-45deg);
+  }
+}
