@@ -29,7 +29,7 @@ nav {
   z-index: 1000;
 }
 #menu-container {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
