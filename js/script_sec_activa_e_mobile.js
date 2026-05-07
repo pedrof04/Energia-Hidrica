@@ -5,9 +5,12 @@
     const spans = document.querySelectorAll('#hamburger span');
 
     // --- Funções para o MENU MOBILE ---
+    const hamburger = document.getElementById('hamburger');
+    hamburger.addEventListener('click', toggleMenu);
     function toggleMenu() {
-        navList.classList.toggle('active');
+        const isOpen = navList.classList.toggle('active');
         spans.forEach(span => span.classList.toggle('open'));
+        hamburger.setAttribute("aria-expanded", isOpen);//atualizar quando o menu abre
     }
 
     function closeMenu() {
@@ -17,7 +20,7 @@
 
     navItems.forEach(link => {
         link.addEventListener('click', () => closeMenu());
-    });
+    });  
 
 
     // --- Deteção da SEÇÃO ATIVA ---
