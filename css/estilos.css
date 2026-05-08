@@ -272,11 +272,9 @@ p {
 
 .card1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
-  text-align: left;
+  align-items: stretch;
+  gap: 24px;
   width: 1000px;
   height: 600px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -285,12 +283,25 @@ p {
   padding: 32px 40px;
 }
 
-.card1 h1 {
-  margin-bottom: 16px;
+.card1-left,
+.card1-right {
+  width: 50%;
 }
 
-.card1 p {
-  margin-top: 0;
+.card1-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  text-align: justify;
+}
+
+.card1-left h1 {
+  margin-bottom: 0;
+}
+
+.card1-left p {
+  margin-top: 20px;
 }
 
 /* --- MEDIA QUERY (Mobile) --- */
