@@ -309,6 +309,12 @@ p {
   margin-top: 0;
 }
 
+.card1-left p em {
+  font-style: normal;
+  font-weight: bold;
+  color: #57aaf2;
+}
+
 /* --- MEDIA QUERY (Mobile) --- */
 @media (max-width: 768px) {
   #hamburger {
