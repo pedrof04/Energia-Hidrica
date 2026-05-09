@@ -297,7 +297,7 @@ p {
 }
 
 .card1-left h1 {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .card1-left h1 span {
@@ -305,15 +305,15 @@ p {
 }
 
 .card1-title-top {
-  color: var(--primary-color);
+  color: #034c8c;
 }
 
 .card1-title-bottom {
-  color: var(--accent-color);
+  color: #57aaf2;
 }
 
 .card1-left p {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 /* --- MEDIA QUERY (Mobile) --- */
