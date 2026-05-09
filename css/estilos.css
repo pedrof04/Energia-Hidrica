@@ -315,6 +315,148 @@ p {
   color: #57aaf2;
 }
 
+.popup-btn {
+  display: inline-block;
+  background: none;
+  border: 2px solid #57aaf2;
+  color: #57aaf2;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+  width: fit-content;
+}
+
+.popup-btn:hover {
+  background: #57aaf2;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* --- POPUP --- */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 4, 94, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.popup-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popup-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 36px;
+  max-width: 540px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+  transition: transform 0.3s;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.popup-overlay.open .popup-box {
+  transform: scale(1);
+}
+
+.popup-box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #034c8c;
+  margin-bottom: 24px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #999;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-close:hover {
+  color: var(--azul-escuro);
+  background: #f0f0f0;
+  transform: rotate(90deg);
+}
+
+/* Timeline (popup) */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: start;
+}
+
+.tl-item:last-child {
+  border-bottom: none;
+}
+
+.tl-year {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: var(--azul-claro);
+  font-size: 0.95rem;
+  padding-top: 2px;
+}
+
+.tl-item p {
+  font-size: 0.92rem;
+  color: #3a5a6e;
+  line-height: 1.6;
+}
+
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--azul-escuro);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--azul-claro);
+  border-radius: 3px;
+}
+
 /* --- MEDIA QUERY (Mobile) --- */
 @media (max-width: 768px) {
   #hamburger {

@@ -177,6 +177,65 @@
               humanos usam a força da água há mais de 2 000 anos — primeiro para
               moinhos de trigo, e hoje para iluminar cidades inteiras.
             </p>
+            <button class="popup-btn" onclick="abrirPopup('popup-historia')">
+              Saber mais sobre a história ✦
+            </button>
+
+            <!-- POPUP: HISTÓRIA DA ENERGIA HÍDRICA -->
+            <div
+              id="popup-historia"
+              class="popup-overlay"
+              onclick="fecharPopup('popup-historia')"
+            >
+              <div class="popup-box" onclick="event.stopPropagation()">
+                <button
+                  class="popup-close"
+                  onclick="fecharPopup('popup-historia')"
+                >
+                  ✕
+                </button>
+                <h3>🕰️ História da Energia Hídrica</h3>
+                <div class="popup-content">
+                  <div class="timeline">
+                    <div class="tl-item">
+                      <span class="tl-year">~200 a.C.</span>
+                      <p>
+                        Primeiros moinhos de água na Grécia e Roma para moagem
+                        de cereais.
+                      </p>
+                    </div>
+                    <div class="tl-item">
+                      <span class="tl-year">1882</span>
+                      <p>
+                        Primeira central hidroelétrica do mundo, em Appleton
+                        (EUA), ilumina 180 lâmpadas.
+                      </p>
+                    </div>
+                    <div class="tl-item">
+                      <span class="tl-year">1936</span>
+                      <p>
+                        Conclusão da Barragem Hoover nos EUA, tornando-se
+                        símbolo da engenharia moderna.
+                      </p>
+                    </div>
+                    <div class="tl-item">
+                      <span class="tl-year">2003</span>
+                      <p>
+                        Inauguração da Barragem das Três Gargantas na China, a
+                        maior do mundo.
+                      </p>
+                    </div>
+                    <div class="tl-item">
+                      <span class="tl-year">Hoje</span>
+                      <p>
+                        A energia hídrica fornece eletricidade a mais de 1
+                        bilião de pessoas em todo o mundo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="card1-right"></div>
         </div>
@@ -197,5 +256,24 @@
     </footer>
 
     <script src="js/script_sec_activa_e_mobile.js"></script>
+    <script>
+      // Popup functions
+      function abrirPopup(id) {
+        document.getElementById(id).classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function fecharPopup(id) {
+        document.getElementById(id).classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          document.querySelectorAll(".popup-overlay.open").forEach((p) => {
+            p.classList.remove("open");
+            document.body.style.overflow = "";
+          });
+        }
+      });
+    </script>
   </body>
 </html>
