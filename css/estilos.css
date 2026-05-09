@@ -298,17 +298,10 @@ p {
 
 .card1-left h1 {
   margin-bottom: 20px;
-}
-
-.card1-left h1 span {
-  display: block;
-}
-
-.card1-title-top {
   color: #034c8c;
 }
 
-.card1-title-bottom {
+.card1-left h1 strong {
   color: #57aaf2;
 }
 
