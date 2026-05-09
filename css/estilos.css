@@ -300,6 +300,18 @@ p {
   margin-bottom: 0;
 }
 
+.card1-left h1 span {
+  display: block;
+}
+
+.card1-title-top {
+  color: var(--primary-color);
+}
+
+.card1-title-bottom {
+  color: var(--accent-color);
+}
+
 .card1-left p {
   margin-top: 20px;
 }
