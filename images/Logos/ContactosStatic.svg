@@ -9,7 +9,7 @@
       .cls-2 {
         stroke: #61cae5;
         stroke-miterlimit: 10;
-        stroke-width: 2.6px;
+        stroke-width: 5px;
       }
     </style>
   </defs>
