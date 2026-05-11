@@ -457,6 +457,116 @@ p {
   border-radius: 3px;
 }
 
+/* --- SECÇÃO CONTATOS --- */
+.contatos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contatos-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatos-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.contatos-form {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contatos-form h2 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #034c8c;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #034c8c;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #57aaf2;
+  box-shadow: 0 0 0 3px rgba(87, 170, 242, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: #57aaf2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #3a8fd8;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(87, 170, 242, 0.3);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
 /* --- MEDIA QUERY (Mobile) --- */
 @media (max-width: 768px) {
   #hamburger {
@@ -560,5 +670,15 @@ p {
   #hamburger span.open:nth-child(3) {
     width: 118%;
     transform: rotate(-45deg);
+  }
+
+  /* Contatos - Mobile */
+  .contatos-container {
+    flex-direction: column;
+  }
+
+  .contatos-image,
+  .contatos-form {
+    width: 100%;
   }
 }
