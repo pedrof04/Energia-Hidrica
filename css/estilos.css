@@ -342,7 +342,6 @@ p {
 .popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(3, 4, 94, 0.75);
   backdrop-filter: blur(6px);
   z-index: 2000;
   display: flex;
@@ -404,7 +403,7 @@ p {
 }
 
 .popup-close:hover {
-  color: var(--azul-escuro);
+  color: #034c8c;
   background: #f0f0f0;
   transform: rotate(90deg);
 }
@@ -431,8 +430,8 @@ p {
 
 .tl-year {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  color: var(--azul-claro);
+  font-weight: 1000;
+  color: #57aaf2;
   font-size: 0.95rem;
   padding-top: 2px;
 }
@@ -441,6 +440,7 @@ p {
   font-size: 0.92rem;
   color: #3a5a6e;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* --- SCROLLBAR --- */
@@ -449,11 +449,11 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--azul-escuro);
+  background: #034c8c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--azul-claro);
+  background: #57aaf2;
   border-radius: 3px;
 }
 
