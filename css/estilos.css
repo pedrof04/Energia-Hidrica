@@ -314,6 +314,38 @@ p {
   color: #57aaf2;
 }
 
+.card1-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gota {
+  width: 200px;
+  height: auto;
+  animation: gota-pingar 2.2s linear infinite;
+  transform-origin: center top;
+  will-change: transform;
+}
+
+@keyframes gota-pingar {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .popup-btn {
   display: inline-block;
   background: none;
