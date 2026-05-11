@@ -696,7 +696,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: center;
 }
 
 /* --- MEDIA QUERY (Mobile) --- */
