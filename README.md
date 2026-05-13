@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="images/Logos/GotaStatic.svg" alt="Icone Energia Hidrica" width="96" />
+<img src="images/gota.svg" alt="Icone Energia Hidrica" width="96" />
 
 # Energia Hidrica
 
