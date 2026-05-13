@@ -720,7 +720,7 @@ p {
   gap: 24px;
   width: 1000px;
   height: 600px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
   padding: 32px 40px;
@@ -739,7 +739,7 @@ p {
 }
 
 .adv-card {
-  padding: 30px 24px;
+  padding: 24px 20px;
   border-radius: 16px;
   transition:
     transform 0.25s,
@@ -753,27 +753,27 @@ p {
 }
 
 .adv-card.green {
-  background: #e8fdf0;
+  background: rgba(232, 253, 240, 0.4);
   border-top: 4px solid #2dc653;
 }
 .adv-card.blue {
-  background: #e0f4ff;
+  background: rgba(224, 244, 255, 0.4);
   border-top: 4px solid #0077b6;
 }
 .adv-card.teal {
-  background: #e0faff;
+  background: rgba(224, 250, 255, 0.4);
   border-top: 4px solid #00b4d8;
 }
 .adv-card.indigo {
-  background: #eef0ff;
+  background: rgba(238, 240, 255, 0.4);
   border-top: 4px solid #3a4dc8;
 }
 .adv-card.cyan {
-  background: #e5fcff;
+  background: rgba(229, 252, 255, 0.4);
   border-top: 4px solid #00c8e0;
 }
 .adv-card.sky {
-  background: #e0f8ff;
+  background: rgba(224, 248, 255, 0.4);
   border-top: 4px solid #38bdf8;
 }
 
@@ -793,6 +793,10 @@ p {
   font-size: 0.9rem;
   color: #3a5a6e;
   line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* --- SECÇÃO CURIOSIDADES --- */
