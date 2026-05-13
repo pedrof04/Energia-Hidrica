@@ -229,7 +229,9 @@ p {
   line-height: 1.75rem;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Lora", serif;
   font-weight: 700;
 }
@@ -316,7 +318,6 @@ h1 {
 .card1-left p em {
   font-style: normal;
   font-weight: bold;
-  color: #57aaf2;
 }
 
 .card1-right {
