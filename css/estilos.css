@@ -324,7 +324,7 @@ p {
 .gota {
   width: 200px;
   height: auto;
-  animation: gota-pingar 2.2s linear infinite;
+  animation: gota-pingar 1.5s linear infinite;
   transform-origin: center top;
   will-change: transform;
 }
@@ -334,13 +334,13 @@ p {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(10px);
+    transform: translateY(32px);
   }
   50% {
     transform: translateY(0);
   }
   75% {
-    transform: translateY(-4px);
+    transform: translateY(-14px);
   }
   100% {
     transform: translateY(0);
