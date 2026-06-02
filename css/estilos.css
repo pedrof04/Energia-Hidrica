@@ -636,7 +636,8 @@ h3 {
 
 .contatos-form {
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.70);
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
@@ -648,6 +649,10 @@ h3 {
   color: #034c8c;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.contatos-form .btn-submit {
+  background-color: #034c8c;
 }
 
 .form-group {
@@ -717,6 +722,33 @@ h3 {
 
 .btn-submit:active {
   transform: translateY(0);
+}
+
+.form-toast {
+  position: fixed;
+  left: 50%;
+  top: 24px;
+  transform: translate(-50%, -10px);
+  background: #034c8c;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 10px 24px rgba(3, 76, 140, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  z-index: 9999;
+}
+
+.form-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 .card3 {
@@ -869,7 +901,7 @@ h3 {
 }
 
 .flip-card-front {
-  background-color: rgba(255, 255, 255, 0.70);
+  background-color: rgba(255, 255, 255, 0.7);
   color: #034c8c;
 }
 

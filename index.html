@@ -449,14 +449,14 @@
           </div>
           <div class="contatos-form">
             <h2>Entra em contacto connosco</h2>
-            <form>
+            <form id="contact-form">
               <div class="form-group">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
+                <input type="text" id="email" name="email" required />
               </div>
               <div class="form-group">
                 <label for="assunto">Assunto</label>
@@ -473,6 +473,15 @@
               </div>
               <button type="submit" class="btn-submit">Enviar</button>
             </form>
+            <div
+              id="form-toast"
+              class="form-toast"
+              role="status"
+              aria-live="polite"
+              aria-hidden="true"
+            >
+              A sua mensagem foi enviada.
+            </div>
           </div>
         </div>
       </section>
@@ -485,6 +494,7 @@
 
     <script src="js/script_sec_activa_e_mobile.js"></script>
     <script src="js/script_popup.js"></script>
+    <script src="js/script_form_toast.js"></script>
     <script src="js/script_flip_card.js"></script>
   </body>
 </html>
