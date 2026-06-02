@@ -715,9 +715,9 @@ h3 {
 }
 
 .btn-submit:hover {
-  background-color: #3a8fd8;
+  background-color: #1a6db3;
   transform: translateY(-2px);
-  box-shadow: 0px 6px 15px rgba(87, 170, 242, 0.3);
+  box-shadow: 0px 6px 15px rgba(26, 109, 179, 0.3);
 }
 
 .btn-submit:active {
