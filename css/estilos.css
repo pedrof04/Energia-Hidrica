@@ -832,8 +832,6 @@ h3 {
   font-size: 0.9rem;
   color: #3a5a6e;
   line-height: 1.7;
-  max-height: calc(1.7em * 3);
-  overflow: hidden;
 }
 
 /* --- SECÇÃO CURIOSIDADES --- */
