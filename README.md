@@ -1,55 +1,55 @@
 <div align="center">
 
-<img src="images/gota.svg" alt="Icone Energia Hidrica" width="96" />
+<img src="images/gota.svg" alt="EnergiaHidrica Icon" width="96" />
 
-# Energia Hidrica
+# Energia Hídrica
 
-![Energia Hidrica](https://img.shields.io/badge/Projeto-Energia%20Hidrica-0b7285?style=flat-square)
+![Hydropower Project](https://img.shields.io/badge/Project-Hydropower-0b7285?style=flat-square)
 ![HTML](https://img.shields.io/badge/HTML-5-0b7285?style=flat-square)
 ![CSS](https://img.shields.io/badge/CSS-3-0b7285?style=flat-square)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-0b7285?style=flat-square)
 
-Site estatico sobre energia hidrica, com layout informativo e elementos visuais para explicar o tema de forma clara.
+Static website about hydropower, with an informative layout and visual elements to explain the topic clearly.
 
 </div>
 
-## Visao geral
+## Overview
 
-O site apresenta conceitos basicos, beneficios e desafios da energia hidrica, com foco em leitura rapida, organizacao por secoes e apoio visual por ilustracoes.
+The site presents basic concepts, benefits, and challenges of hydropower, focusing on quick reading, section-based organization, and visual support through illustrations.
 
-## Conteudo
+## Contents
 
-- Pagina principal: [index.html](index.html)
-- Estilos: [css/estilos.css](css/estilos.css)
+- Main page: [index.html](index.html)
+- Styles: [css/estilos.css](css/estilos.css)
 - Scripts:
   - [js/script_flip_card.js](js/script_flip_card.js)
   - [js/script_popup.js](js/script_popup.js)
   - [js/script_sec_activa_e_mobile.js](js/script_sec_activa_e_mobile.js)
-- Imagens e ilustracoes: [images/](images/)
-- Fontes: [fonts/](fonts/)
+- Images and illustrations: [images/](images/)
+- Fonts: [fonts/](fonts/)
 
-## Funcionalidades
+## Features
 
-- Cartoes informativos com efeito flip
-- Popups para detalhes adicionais
-- Destaque de secao ativa e comportamento mobile
-- Layout responsivo com hierarquia de leitura clara
+- Informational cards with flip effect
+- Popups for additional details
+- Active section highlighting and mobile behavior
+- Responsive layout with clear reading hierarchy
 
-## Como abrir
+## How to open
 
-1. Abra o arquivo [index.html](index.html) no navegador.
-2. Opcional: use um servidor local para evitar bloqueios de recursos em alguns navegadores.
+1. Open [index.html](index.html) in your browser.
+2. Optional: use a local server to avoid resource loading restrictions in some browsers.
 
-Se precisar, use um servidor local (por exemplo, a extensao Live Server no VS Code).
+If needed, use a local server (for example, the Live Server extension in VS Code).
 
-## Como editar
+## How to edit
 
-- Ajuste estilos em [css/estilos.css](css/estilos.css)
-- Atualize textos e estrutura em [index.html](index.html)
-- Revise interacoes em [js/script_flip_card.js](js/script_flip_card.js), [js/script_popup.js](js/script_popup.js) e [js/script_sec_activa_e_mobile.js](js/script_sec_activa_e_mobile.js)
-- Troque imagens em [images/](images/)
+- Adjust styles in [css/estilos.css](css/estilos.css)
+- Update text and structure in [index.html](index.html)
+- Review interactions in [js/script_flip_card.js](js/script_flip_card.js), [js/script_popup.js](js/script_popup.js), and [js/script_sec_activa_e_mobile.js](js/script_sec_activa_e_mobile.js)
+- Replace images in [images/](images/)
 
-## Estrutura
+## Project structure
 
 ```
 .
