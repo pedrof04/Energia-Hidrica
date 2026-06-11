@@ -4,7 +4,7 @@
 
 # Energia Hídrica
 
-![Hydropower Project](https://img.shields.io/badge/Project-Hydropower-0b7285?style=flat-square)
+![EnergiaHidrica Project](https://img.shields.io/badge/Project-Hydropower-0b7285?style=flat-square)
 ![HTML](https://img.shields.io/badge/HTML-5-0b7285?style=flat-square)
 ![CSS](https://img.shields.io/badge/CSS-3-0b7285?style=flat-square)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-0b7285?style=flat-square)
